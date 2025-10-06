@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button onclick="clearDisplay()" class="btn clear">C</button>
+      <button onclick="appendChar('(')" class="btn">(</button>
+      <button onclick="appendChar(')')" class="btn">)</button>
+      <button onclick="toggleDegRad()" class="btn" id="mode">DEG</button>
+
+      <button onclick="appendFunction('sin')" class="btn">sin</button>
+      <button onclick="appendFunction('cos')" class="btn">cos</button>
+      <button onclick="appendFunction('tan')" class="btn">tan</button>
+      <button onclick="appendOperator('/')" class="btn operator">÷</button>
+
+      <button onclick="appendFunction('sec')" class="btn">sec</button>
+      <button onclick="appendFunction('cosec')" class="btn">cosec</button>
+      <button onclick="appendFunction('cot')" class="btn">cot</button>
+      <button onclick="appendOperator('*')" class="btn operator">×</button>
+
+      <button onclick="appendFunction('asin')" class="btn">sin⁻¹</button>
+      <button onclick="appendFunction('acos')" class="btn">cos⁻¹</button>
+      <button onclick="appendFunction('atan')" class="btn">tan⁻¹</button>
+      <button onclick="appendOperator('-')" class="btn operator">−</button>
+
+      <button onclick="appendFunction('asec')" class="btn">sec⁻¹</button>
+      <button onclick="appendFunction('acosec')" class="btn">cosec⁻¹</button>
+      <button onclick="appendFunction('log')" class="btn">log</button>
+      <button onclick="appendFunction('ln')" class="btn">ln</button>
+
+      <button onclick="appendConstant('Math.PI')" class="btn">π</button>
+      <button onclick="calculate()" class="btn equal">=</button>
+      <button onclick="backspace()" class="btn backspace">X</button>
+      <button onclick="appendOperator('+')" class="btn operator">+</button>
+
+      <button onclick="appendNumber('7')" class="btn">7</button>
+      <button onclick="appendNumber('8')" class="btn">8</button>
+      <button onclick="appendNumber('9')" class="btn">9</button>
+
+      <button onclick="appendNumber('4')" class="btn">4</button>
+      <button onclick="appendNumber('5')" class="btn">5</button>
+      <button onclick="appendNumber('6')" class="btn">6</button>
+
+      <button onclick="appendNumber('1')" class="btn">1</button>
+      <button onclick="appendNumber('2')" class="btn">2</button>
+      <button onclick="appendNumber('3')" class="btn">3</button>
+
+      <button onclick="appendNumber('0')" class="btn zero">0</button>
+      <button onclick="appendNumber('.')" class="btn">.</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
